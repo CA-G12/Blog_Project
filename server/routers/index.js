@@ -1,5 +1,4 @@
-const router = require('express').Router();
+const users = require('./users');
+const posts = require('./posts');
 
-// main endpoints
-
-module.exports = router;
+module.exports = { users, posts };
