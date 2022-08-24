@@ -4,7 +4,7 @@ const { join } = require('path');
 const compression = require('compression');
 const express = require('express');
 // my modules
-const { users, posts } = require('./routers');
+const { users, router } = require('./routers');
 
 const app = express();
 
@@ -17,7 +17,7 @@ app.use(express.static(join(__dirname, '..', 'public')));
 
 app.use(users);
 // app.use(posts);
-
+app.use(router);
 /*
 
 app.use((req, res) => {

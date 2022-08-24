@@ -1,14 +1,13 @@
 const { Pool } = require('pg');
 require('env2')('.env');
 
-const DATABASE_URL = 'postgres://anon:123123@localhost:5432/blog';
-
-if (!DATABASE_URL) {
+const { DB_URL } = process.env;
+if (!DB_URL) {
   throw new Error('invalid db url');
 }
 
 const connection = new Pool({
-  connectionString: DATABASE_URL,
+  connectionString: DB_URL,
   ssl: false,
 });
 
