@@ -144,3 +144,48 @@ input[type=submit]{
 input:focus {
     outline:none;
 }
+
+
+/* ------------------sign up page styles ----------------- */
+
+.header-right-signup{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-right-signup p{
+  color: #000;
+}
+.header-right-signup p a{
+    text-decoration: none;
+    color: var(--first-color);
+    /* font-weight: 400; */
+}
+.right-side-signup{
+    display: flex;
+    flex-direction :column ;
+    justify-content: space-around;
+    align-items: center;
+}
+h3{
+    font-size: 30px;
+    font-weight :400 ;
+}
+h3 span{
+    color :var(--first-color);
+}
+.sign-up-form{
+    margin :0 ;
+    width  : 60%;
+    height : 400px ;
+}
+
+.name{
+    display:flex ;
+    justify-content: space-between;
+}
+
+.first-name , .last-name {
+    width : 49% ;
+}
