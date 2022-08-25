@@ -9,6 +9,6 @@ const getPosts = (req, res) => {
       console.log(err);
       res.status(500).json({ msg: 'server error' });
     });
-}
+};
 
-module.exports = getPosts ;
+module.exports = getPosts;
