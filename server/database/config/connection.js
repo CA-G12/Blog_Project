@@ -2,6 +2,7 @@ const { Pool } = require('pg');
 require('env2')('.env');
 
 const { DB_URL } = process.env;
+console.log(process.env)
 if (!DB_URL) {
   throw new Error('invalid db url');
 }
